@@ -1,0 +1,27 @@
+{% extends 'base.html' %} {% load static %} {% block title %}All Employee list{% endblock title %} {% block templates %}
+<p>{{ msgbox }}</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Employee ID</th>
+      <th>Employee Name</th>
+      <th>Employee Address</th>
+      <th>Employee email</th>
+      <th>Employee phone</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for k in data %}
+    <tr>
+      <td>{{k.emp_id}}</td>
+      <td>{{k.emp_name}}</td>
+      <td>{{k.emp_address}}</td>
+      <td>{{k.emp_email}}</td>
+      <td>{{k.emp_phone}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+{% endblock templates %}
