@@ -22,12 +22,12 @@ a {
   display: inline-block;
 }
 .form-section {
-  --max-width: 600px;
+  --max-width: 700px;
   --padding: 2rem;
   width: min(var(--max-width), 100% - var(--padding));
   margin-inline: auto;
-  background-color: rgb(86, 96, 105);
-  box-shadow: 5px 5px 10px rgb(185, 182, 182);
+  background-color: rgb(66, 134, 136);
+  box-shadow: 5px 5px 10px rgb(148, 147, 147);
   padding: 10px 20px;
   border-radius: 10px;
 }
@@ -45,7 +45,7 @@ input[type="submit"] {
   /* display: inline-block;
   font-size: 16px; */
   height: 30px;
-  background-color: rgb(6, 94, 162);
+  background-color: rgba(59, 177, 240, 0.912);
   border: none;
 }
 input::placeholder {
@@ -53,16 +53,27 @@ input::placeholder {
   opacity: 0.7;
 }
 table {
-  --max-width: 600px;
+  --max-width: 700px;
   --padding: 2rem;
   width: min(var(--max-width), 100% - var(--padding));
   margin-inline: auto;
+  border-collapse: collapse;
+}
+th {
+  background-color: #5dabab;
 }
 th,
 td {
   border-bottom: 1px solid black;
   text-align: start;
+  padding: 5px;
 }
 tr:nth-child(even) {
-  background-color: #d6eeee;
+  background-color: #d8e4e4;
+}
+tr:hover {
+  background-color: #aadfdf;
+}
+td:hover {
+  cursor: pointer;
 }
