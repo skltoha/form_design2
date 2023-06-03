@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from . models import employeeinfo
 
+
 # Create your views here.
 def index(request):
     return render(request, 'index.html')
@@ -33,3 +34,4 @@ def empStore(request):
             data = employeeinfo.objects.all()[0:]
             return render(request, 'records.html', {'msgbox': msgbox, 'data': data})        
     return render(request, 'index.html')
+
